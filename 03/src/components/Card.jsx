@@ -1,6 +1,8 @@
 import React from 'react'
 
-function Card() {
+function Card(props) {
+  console.log("props", props);
+  
   return (
     <div class="flex font-sans">
     <div class="flex-none w-48 relative">
@@ -9,7 +11,7 @@ function Card() {
     <form className="flex-auto p-6 bg-slate-300">
       <div class="flex flex-wrap">
         <h1 class="flex-auto text-lg font-semibold text-slate-900">
-          Classic Utility Jacket
+          {props.cardName}
         </h1>
         <div class="text-lg font-semibold text-slate-500">
           $110.00
